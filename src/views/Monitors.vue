@@ -1,0 +1,1 @@
+<template>Monitors</template>
