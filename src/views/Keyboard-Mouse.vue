@@ -1,6 +1,6 @@
 <template>
 <div class="min-h-screen container flex flex-col">
-    <h1 class="text-4xl text-center">Monitors</h1>
+    <h1 class="text-4xl text-center">Keyboards and Mouse</h1>
 </div>
 
 <div class="grid grid-cols-3 divide-x divide-green-500">
