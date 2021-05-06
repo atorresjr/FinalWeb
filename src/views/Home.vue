@@ -1,5 +1,6 @@
 <template>
-<div class="min-h-screen container flex flex-col">
-    <h1 class="text-4xl text-center">Home of the Wolverines</h1>
-</div>
+    <h1 class="strokeme">Home of the Wolverines</h1>
+    <div
+        class="mt-8 border-double border-4 border-yellow-200 rounded-md container mx-auto w-auto h-screen bg-green-600"
+    >Test!</div>
 </template>

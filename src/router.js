@@ -8,10 +8,10 @@ import Keyboard_Mouse from './views/Keyboard-Mouse.vue'
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/Computers', component: Computers},
-    {path: '/Monitors', component: Monitors },
-    {path: '/Inventory', component: Inventory },
-    {path: '/Keyboard-Mouse', component: Keyboard_Mouse },
+    { path: '/Computers', component: Computers },
+    { path: '/Monitors', component: Monitors },
+    { path: '/Inventory', component: Inventory },
+    { path: '/Keyboard-Mouse', component: Keyboard_Mouse },
 ]
 
 export const router = createRouter({
