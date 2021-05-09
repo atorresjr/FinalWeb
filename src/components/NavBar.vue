@@ -1,7 +1,11 @@
 <template>
-  <div class="navbar mb-2 bg-green-700">
+  <div class="navbar mb-2 p-4 bg-green-700">
     <div class="flex-none px-2 mx-2">
-      <span class="text-lg font-bold">Liberty Elementary</span>
+      <span class="text-2xl font-bold text-yellow-300">
+        <noto:badger />
+      </span>
+
+      <span class="text-lg font-bold text-yellow-300 tracking-wider">&nbsp;Liberty Elementary</span>
     </div>
     <div class="flex-1 px-2 mx-2">
       <div class="items-stretch flex">
