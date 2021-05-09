@@ -5,10 +5,10 @@
         <p class="text-sm font-medium text-yellow-900">Computer Model Will Go Here</p>
         <div class="flex justify-end space-x-4">
             <button class="hover:text-green-800">
-                <mdi:file-document-edit />
+                <flat-color-icons:add-database />
             </button>
             <button class="hover:text-red-800">
-                <flat-ui:trash />
+                <flat-color-icons:full-trash />
             </button>
         </div>
     </div>
