@@ -13,13 +13,32 @@
         <router-link to="/Computers" class="btn btn-ghost btn-sm rounded-btn">Computers</router-link>
         <router-link to="/Monitors" class="btn btn-ghost btn-sm rounded-btn">Monitors</router-link>
         <router-link to="/Keyboard-Mouse" class="btn btn-ghost btn-sm rounded-btn">Keyboard/Mouse</router-link>
-        <router-link to="/Inventory" class="btn btn-ghost btn-sm rounded-btn">Inventory</router-link>
       </div>
     </div>
 
     <div class="flex-none">
-      <router-link to="/SignIn" class="btn btn-ghost btn-sm rounded-btn">Sign In</router-link>
+      <router-link
+        v-if="!isAuthenticated"
+        to="/Login"
+        class="btn btn-ghost btn-sm rounded-btn"
+      >Login</router-link>
+
+      <div v-else>
+        <router-link to="/Inventory" class="btn btn-sucess btn-ghost btn-sm rounded-btn">Inventory</router-link>
+        <button class="btn btn-error btn-sm rounded-btn" @click="logout">Logout</button>
+      </div>
     </div>
   </div>
 </template>
+
+
+<script setup>
+import { useRouter } from 'vue-router'
+import { isAuthenticated } from '../helpers/useAuth.js'
+const router = useRouter()
+const logout = () => {
+  isAuthenticated.value = false
+  router.push('/')
+}
+</script>
 
