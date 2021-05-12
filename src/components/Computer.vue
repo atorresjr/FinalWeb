@@ -14,3 +14,16 @@
     </div>
 </template>
 
+<script setup>
+import { defineProps } from 'vue'
+
+
+defineProps({
+    default: {
+        id: 0,
+        title: '',
+        content: '',
+    },
+})
+
+</script>

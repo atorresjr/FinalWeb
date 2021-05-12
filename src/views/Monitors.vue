@@ -7,5 +7,13 @@
       <InventoryAdd />
     </div>
   </div>
+  <AddForm v-if="show" />
 </template>
+
+<script setup>
+import { onMounted } from 'vue'
+import { show, notes, getAll } from '~/helpers/useForm'
+onMounted(() => refresh())
+const refresh = async () => await getAll()
+</script>
 
